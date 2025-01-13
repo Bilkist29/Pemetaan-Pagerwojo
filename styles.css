@@ -1,0 +1,310 @@
+/* General Settings */
+body {
+    font-family: 'cambria';
+    margin: 0;
+    padding: 0;
+    color: #000000;
+    line-height: 1;
+}
+.navbar-toggler {
+    border: none;
+    background: #fff;
+}
+/*navbar responsif*/
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 123, 255, 1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.collapse.show {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Section Font Sizes */
+#Tentang h2 {
+    font-family: 'Cambria', serif;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#Tentang p {
+    font-family: 'calibri';
+    font-size: 1.3rem;
+    line-height: 1.8;
+    color: #555;
+}
+#Tentang h3{
+    font-family: 'cambria';
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+
+/* Profil Section */
+#Profil {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+#Profil h2 {
+    font-family: 'Cambria', serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #141313;
+}
+
+#Profil p {
+    font-family: 'Verdana', sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #312d2d;
+}
+
+/* Card Styling */
+.card {
+    margin: 15px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 100%; /* Membuat kartu menyesuaikan lebar container */
+    max-width: 350px; /* Batas maksimal lebar kartu */
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%; /* Lebar penuh untuk responsivitas */
+    height: 200px; /* Tinggi seragam untuk semua gambar */
+    object-fit: cover; /* Memastikan gambar tetap proporsional */
+}
+
+.card-body {
+    padding: 15px; /* Memberikan ruang yang cukup di sekitar teks */
+    text-align: center;
+}
+
+.card-title {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.4rem; /* Sedikit lebih kecil agar rapi */
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-family: 'Verdana', sans-serif;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Responsiveness for Cards */
+@media (max-width: 768px) {
+    .card {
+        max-width: 100%; /* Kartu menyesuaikan ukuran layar kecil */
+    }
+
+    .card img {
+        height: 180px; /* Tinggi gambar lebih kecil untuk layar kecil */
+    }
+
+    .card-title {
+        font-size: 1.2rem;
+    }
+
+    .card-text {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .card img {
+        height: 150px; /* Tinggi gambar lebih kecil untuk perangkat kecil */
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+    .card-text {
+        font-size: 0.8rem;
+    }
+}
+
+
+#Peta h2 {
+    font-family: 'cambria';
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#Peta p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+#kontak h2 {
+    font-family: 'cambria';
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#kontak p {
+    font-family: 'calibri';
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Sticky Navbar */
+.navbar {
+    position: sticky;
+    top: 0;
+    background: linear-gradient(90deg, #6eb2fa, #007bff);
+    color: white;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.navbar-brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://cdn.pixabay.com/photo/2017/10/02/10/25/students-2808385_1280.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 200px 20px;
+    position: relative;
+}
+
+
+.hero h1 {
+    font-family: 'cambria';
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero h2 {
+    font-family: 'cambria';
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.hero .btn {
+    font-size: 1.2rem;
+    padding: 10px 30px;
+    border-radius: 25px;
+    background: #007bff;
+    color: white;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.hero .btn:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+
+
+/* Section Titles */
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #0d0e0e;
+    text-transform: capitalize;
+    letter-spacing: 1.5px;
+    position: relative;
+}
+
+/* Card Styling */
+.card img {
+    width: 100%; /* Full width inside the card */
+    height: 200px; /* Fixed height */
+    object-fit: cover; /* Crop the image to fit while maintaining aspect ratio */
+    border-top-left-radius: 8px; /* Optional for rounded corners */
+    border-top-right-radius: 8px;
+}
+.card {
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    font-family: 'calibri';
+    background-color: #f4f4f4;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 1rem;
+    color: #555;
+}
+
+footer a {
+    color: #ebeff3;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ffdd57;
+    text-decoration: underline;
+}
+.navbar-brand{
+    font-family: 'cambria';
+    font-weight: bold;
+    font-size: 1.4rem;
+
+}
+.navbar-nav .nav-link {
+    font-family: 'cambria';
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: white;
+    margin: 0 10px;
+    transition: color 0.3s ease-in-out, text-decoration 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #000000;
+    text-decoration: underline;
+}
